@@ -20,6 +20,13 @@ body {
     background-color: black;
     color: white;
     text-align: center;
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+    }
 }
 
 header.banner {
@@ -28,6 +35,7 @@ header.banner {
     padding-bottom: 75px;
     padding-inline: 30px;
     border-bottom: 1px solid #33A8DB;
+    animation: appear 1s backwards;
 
     .banner-content {
         max-width: 500px;
@@ -35,6 +43,7 @@ header.banner {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        animation: appear 1s backwards 300ms;
 
         .logo {
             border-radius: 100%;
@@ -59,10 +68,12 @@ header.banner {
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            animation: appear 1s backwards 400ms;
         }
 
         p {
             font-size: 20px;
+            animation: appear 1s backwards 600ms;
         }
 
         button {
@@ -80,6 +91,8 @@ header.banner {
             outline: none;
             transition: opacity 300ms;
             cursor: pointer;
+            animation: appear 1s backwards 800ms;
+
 
             &:hover,
             &:focus {
@@ -96,6 +109,7 @@ main {
         max-width: 800px;
         margin-inline: auto;
         padding-inline: 30px;
+        animation: appear 1s backwards 300ms;
 
         h2 {
             color: #33A8DB;
@@ -103,6 +117,7 @@ main {
             font-weight: 700;
             letter-spacing: 6.08px;
             text-transform: uppercase;
+            animation: appear 1s backwards 500ms;
         }
 
         p {
@@ -160,6 +175,7 @@ main {
                 text-shadow: 3px 2px 0px #33A8DB;
                 font-size: 40px;
                 font-weight: 900;
+                animation: appear 1s backwards 300ms;
             }
         }
     }
