@@ -1,0 +1,191 @@
+body,
+header,
+div,
+img,
+h1,
+p,
+button,
+main,
+section,
+h2,
+footer,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(49, 168, 221, 0.2), rgba(0, 0, 0, 0.6)), url("../assets/images/banner.png");
+  padding-top: 56px;
+  padding-bottom: 75px;
+  padding-inline: 30px;
+  border-bottom: 1px solid #33A8DB;
+}
+header.banner .banner-content {
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+header.banner .banner-content .logo {
+  border-radius: 100%;
+  width: 268px;
+  height: 268px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+header.banner .banner-content .logo img {
+  height: 214px;
+  width: 248px;
+}
+header.banner .banner-content h1 {
+  font-size: 40px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header.banner .banner-content p {
+  font-size: 20px;
+}
+header.banner .banner-content button {
+  color: #31A8DD;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3.36px;
+  border: 2px solid #3BA1CD;
+  padding: 20px 20px;
+  width: 100%;
+  max-width: 330px;
+  background-color: transparent;
+  margin-inline: auto;
+  outline: none;
+  transition: opacity 300ms;
+  cursor: pointer;
+}
+header.banner .banner-content button:hover, header.banner .banner-content button:focus {
+  opacity: 0.5;
+}
+
+main section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: 30px;
+}
+main section h2 {
+  color: #33A8DB;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 6.08px;
+  text-transform: uppercase;
+}
+main section p {
+  font-size: 16px;
+}
+main section#course-content {
+  display: grid;
+  gap: 24px;
+}
+main section#course-content .modules-list {
+  display: grid;
+  gap: 24px;
+  max-width: 540px;
+  margin-inline: auto;
+}
+main section#course-content .modules-list .module {
+  padding: 16px 32px;
+  border-radius: 999px;
+  border: 1px solid #33A8DB;
+  background: #252525;
+  box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.4) inset;
+}
+main section#course-content .modules-list .module span {
+  color: #33A8DB;
+}
+main section#transform-world {
+  background-image: url("../assets/images/woman-code.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-top: 1px solid #33A8DB;
+  border-right: 1px solid #33A8DB;
+  border-bottom: 1px solid #33A8DB;
+  height: 360px;
+  max-width: none;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section#transform-world .container {
+  max-width: 600px;
+  flex: 1;
+}
+main section#transform-world .container p {
+  max-width: 240px;
+  text-align: left;
+  color: #FFF;
+  text-shadow: 3px 2px 0px #33A8DB;
+  font-size: 40px;
+  font-weight: 900;
+}
+main section#professional-challenges {
+  display: grid;
+  gap: 32px;
+}
+main section#professional-challenges img {
+  width: 100%;
+  max-width: 660px;
+}
+
+footer {
+  border-top: 1px solid #33A8DB;
+  background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
+  padding: 60px 30px 40px 30px;
+}
+footer img {
+  width: 100%;
+  max-width: 310px;
+}
+footer p {
+  margin-top: 10px;
+}
+footer p a {
+  color: #33A8DB;
+  font-weight: 700;
+  text-decoration: none;
+  outline: none;
+  transition: opacity 300ms;
+}
+footer p a:hover, footer p a:focus {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+@media (max-width: 380px) {
+  header.banner .banner-content h1 {
+    font-size: 36px;
+  }
+  main section h2 {
+    font-size: 24px;
+  }
+  main section#transform-world .container p {
+    font-size: 36px;
+  }
+}/*# sourceMappingURL=style.css.map */
